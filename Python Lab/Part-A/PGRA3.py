@@ -1,5 +1,5 @@
 tp1 = (1,2,3,4,5,6,7,8,9,10)
-print('Original Tuple:',tp1)
+print('Original Tuple :',tp1)
 
 # answer for a question
 print('\n[a] Printing first half tuple in one line and second half in next line')
@@ -8,7 +8,7 @@ print('\t', tp1[5:])
 
 # answer for b question
 
-print('\n[b] Tuple with even numbers:')
+print('\n[b] Tuple with even numbers :')
 l = list() 
 for i in tp1:
     if i%2 == 0: 

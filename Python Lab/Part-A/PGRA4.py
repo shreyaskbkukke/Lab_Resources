@@ -8,9 +8,9 @@ def char_frequency(str):
             dict[i] = 1
     return dict
 
-str = input('Enter a String :')
+str = input('Enter a String : ')
 d = char_frequency(str)
-print('\nFrequency of each character in a string is :')
+print('\nFrequency of each character in a string is : ')
 print(d)
 for key, value in d.items():
-    print('Count of charecter ', key,'is' , value)
+    print('Count of charecter', key,'is' , value)

@@ -1,44 +1,46 @@
-class Employee:
-    def __init__(self, empno, name, deptname, desig, age, salary):
-        self.empno=empno
+class employee:
+    def __init__(self, empNo, name, deptName, desig, age, salary):
+        self.empNo=empNo
         self.name=name
-        self.deptname=deptname 
+        self.deptName=deptName 
         self.desig=desig
         self.age=age
         self.salary=salary
 
     def display(self):
-        print( self.empno +" "+ self.name+" "+ self.deptname+" "+ self.desig+" "+ self.age+" "+ self.salary)
+        print( self.empNo +"\t"+ self.name+"\t"+ self.deptName+"\t"+ self.desig+"\t"+ self.age+"\t"+ self.salary)
     
     def search(self,eno):
-        if self.empno==eno:
+        if self.empNo==eno:
             return True
         else:
             return False
 
-elist=list()
-n = int(input("Enter number of Employees :"))
-print("Employee Details Entry. ")
-print("_______________________________________________________")
+empList=list()
+n = int(input("Enter number of Employees : "))
+print("____________________________________________________________________")
+print("\n........Employee Details Entry........")
 for i in range(n):
-    empno=input("Enter the Employee number : ")
+    empNo=input("\nEnter the Employee number : ")
     name=input("Enter the Employee name : ")
-    deptname=input("Enter the Department name :")
-    desig= input("Enter the Designation : ")
+    deptName=input("Enter the Department name : ")
+    desig= input("Enter the Designation : ") # use the same length for good result
     age=input("Enter the age : ")
     salary=input("Enter the Salary : ")
-    elist.append(Employee(empno, name, deptname, desig, age, salary))
-print("_______________________________________________________")
+    empList.append(employee(empNo, name, deptName, desig, age, salary))
+print("____________________________________________________________________\n")
 print("........Employee Information....... ")
 for i in range(n):
-    elist[i].display()
-print(".......Search.......")
-n=input("Enter the employee number :")
-for e in elist:
+    empList[i].display()
+print("____________________________________________________________________\n")
+print("........Search........")
+n=input("Enter the employee number : ")
+print('')
+for e in empList:
     found=e.search(n)
     if found:
         e.display()
         break
-    else:
-        print("Employee not found")
-        
+else:
+    print("Employee not found...!")
+print("____________________________________________________________________\n")

@@ -6,12 +6,12 @@ def CheckPrime( n ):
             break
 
 a = [] 
-n = int(input("Enter value of n: "))  
-print( "Enter", n,  "elements of the array: " ) 
+n = int(input("Enter value of n : "))  
+print( "Enter", n,  "elements of the array : " ) 
 for i in range( n ):  
     ele = int(input())
     a.append( ele )
-print( "The prime numbers in the given array are: " ) 
+print( "The prime numbers in the given array are : " ) 
 for j in a: 
     if( CheckPrime( j ) != False ): 
         print( j )

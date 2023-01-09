@@ -25,7 +25,7 @@ def triangle():
     print("Area of the trangle with base and height",b,",",h ,"units is",1/2*b*h,"square units.")
 
 while(1):
-    print("\n\n\n<<<<<...Menu...>>>>>\n" 
+    print("\n\n\n<<<<~~~~____Menu____~~~~>>>>\n" 
     "1. Circle\n"
     "2. Square\n"
     "3. Rectanglen\n"
