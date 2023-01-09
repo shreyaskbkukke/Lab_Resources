@@ -2,7 +2,7 @@ import mysql.connector
 
 def insert_data(rno, name, m1, m2,m3):
     try:
-        query = """INSERT INTO student2 (rno, name, m1, m2,m3) 
+        query = """INSERT INTO student (rno, name, m1, m2,m3) 
         VALUES (%s, %s, %s, %s,%s) """
         record = (rno, name, m1, m2,m3)
         cursor.execute(query, record)
@@ -47,7 +47,7 @@ while(1):
     elif c==3:
         try:
             rno=int(input("Enter register no to delete :"))
-            Delete_query = """Delete from student2 where rno = %s"""
+            Delete_query = """Delete from student where rno = %s"""
             
             # row to delete
             cursor.execute(Delete_query, (rno,))

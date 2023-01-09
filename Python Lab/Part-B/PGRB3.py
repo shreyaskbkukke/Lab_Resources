@@ -1,3 +1,5 @@
+import random as ran
+
 # define Python user-defined exceptions
 class Error(Exception):
     """Base class for other exceptions"""
@@ -12,8 +14,10 @@ class ValueLargeError(Error):
     pass
 
 # you need to guess this number
-number = 50
+# number = 50
+number = ran.randrange(0, 100)
 # user guesses a number until he/she gets it right
+print("\nGuess the number between 0 to 100...Best of luck...\n")
 while True:
     try:
         i_num = int(input("Enter a number: "))
@@ -23,9 +27,9 @@ while True:
             raise ValueLargeError
         break
     except ValueSmallError:
-        print("This value is small, try again!")
+        print("This value is small, increase the value and try again!")
         print()
     except ValueLargeError:
-        print("This value is large, try again!")
+        print("This value is large, decrease the value and try again!")
         print()
-        print("Congratulations! You guessed it correctly.")
+print("Congratulations! You guessed it correctly.")

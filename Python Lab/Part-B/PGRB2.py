@@ -23,7 +23,7 @@ class Box(Rectangle):
     def perimeter(self):
         super().perimeter()
         p=4*(self.length+self.width+self.height)
-        print("\nPerimeter of the Box is %.2f"%p)
+        print("\nPerimeter of the Box is %.2f"%p,"\n")
 
 l=float(input("Enter the length of the rectangle :"))
 w=float(input("Enter the width of the rectangle :"))

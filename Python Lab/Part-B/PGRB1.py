@@ -36,10 +36,10 @@ print("____________________________________________________________________\n")
 print("........Search........")
 n=input("Enter the employee number : ")
 print('')
-for e in empList:
-    found=e.search(n)
+for i in empList:
+    found=i.search(n)
     if found:
-        e.display()
+        i.display()
         break
 else:
     print("Employee not found...!")
