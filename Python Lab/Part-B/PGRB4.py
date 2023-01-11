@@ -25,7 +25,7 @@ while(1):
     print("\n\n\n<<<<~~~~____Menu____~~~~>>>>\n")
     print('1. Find the sequences of one upper case letter followed by lower case letters.')
     print('2. Match a word containing letter z.' )
-    print('3. Match a string that contains only upper and lowercase letters, numbers,underscores.') 
+    print('3. Match a string that contains only upper and lowercase letters, numbers, underscores.') 
     print('4. To remove leading zeros from an IP address.')
     print('5. Exit')
     c=int(input('Enter your choice : '))
