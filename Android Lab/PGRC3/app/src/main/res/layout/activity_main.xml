@@ -4,58 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:textAlignment="center"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="420dp"
+        android:id="@+id/textView2"
+        android:layout_width="412dp"
         android:layout_height="38dp"
-        android:layout_marginTop="24dp"
         android:fontFamily="sans-serif-black"
+        android:gravity="center"
         android:text="Book Store"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/kannada_books"
-        android:layout_width="382dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="12dp"
-        android:background="@color/black"
-        android:gravity="center"
-        android:text="TextView"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textColorHint="#000000"
-        app:flow_horizontalAlign="center"
-        app:flow_verticalAlign="center"
-        app:layout_constraintBottom_toTopOf="@+id/englishBooks"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.63"
-        tools:text="Kannada Books" />
-
-    <TextView
-        android:id="@+id/englishBooks"
-        android:layout_width="382dp"
-        android:layout_height="82dp"
-        android:layout_marginBottom="400dp"
-        android:background="@color/black"
-        android:gravity="center"
-        android:text="TextView"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textColorHint="#000000"
-        app:flow_horizontalAlign="center"
-        app:flow_verticalAlign="center"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="English Books" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/Kannada_Books_btn"
+        android:layout_width="378dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Kannada Books"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/English_Books_btn"
+        android:layout_width="378dp"
+        android:layout_height="85dp"
+        android:background="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="English Books"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Kannada_Books_btn"
+        app:layout_constraintVertical_bias="0.102" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

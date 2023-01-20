@@ -10,19 +10,19 @@ win.title("Calculator")
 # input field whenever you enter a number
 
 def btn_click(item):
-    "This function is used to clear the input field"
+    "This function is used"
     global expression
     expression = expression + str(item)
     input_text.set(expression)
 
 
-def bt_clear(): 
+def btn_clear(): 
     "This function calculates the expression present in input field"
     global expression
     expression = ""
     input_text.set("")
 
-def bt_equal():
+def btn_equal():
     "This function is used to calculates the expression present in input field"
     global expression
     result = str(eval(expression)) 
@@ -49,7 +49,7 @@ btns_frame = Frame(win, width=312, height=272.5, bg="grey")
 btns_frame.pack()
 
 # first row
-clear = Button(btns_frame, text = "C", fg = "black", width = 32, height = 3, bd = 0, bg = "#eee", cursor= "hand2", command = lambda: bt_clear()).grid(row = 0, column = 0, columnspan = 3, padx = 1, pady= 1)
+clear = Button(btns_frame, text = "C", fg = "black", width = 32, height = 3, bd = 0, bg = "#eee", cursor= "hand2", command = lambda: btn_clear()).grid(row = 0, column = 0, columnspan = 3, padx = 1, pady= 1)
 divide = Button(btns_frame, text = "/", fg = "black", width = 10, height = 3, bd = 0, bg = "#eee", cursor = "hand2", command = lambda: btn_click("/")).grid(row = 0, column = 3, padx = 1, pady = 1)
 
 # second row
@@ -73,6 +73,6 @@ plus = Button(btns_frame, text = "+", fg = "black", width = 10, height = 3, bd =
 # fourth row
 zero = Button(btns_frame, text = "0", fg = "black", width = 21, height = 3, bd = 0, bg = "#fff", cursor= "hand2", command = lambda: btn_click(0)).grid(row = 4, column = 0, columnspan = 2, padx = 1, pady = 1)
 point = Button(btns_frame, text = ".", fg = "black", width = 10, height = 3, bd = 0, bg = "#eee", cursor= "hand2", command = lambda: btn_click(".")).grid(row = 4, column = 2, padx = 1, pady = 1)
-equals = Button(btns_frame, text = "=", fg = "black", width = 10, height = 3, bd = 0, bg = "#eee", cursor = "hand2", command = lambda: bt_equal()).grid(row = 4, column = 3, padx = 1, pady = 1)
+equals = Button(btns_frame, text = "=", fg = "black", width = 10, height = 3, bd = 0, bg = "#eee", cursor = "hand2", command = lambda: btn_equal()).grid(row = 4, column = 3, padx = 1, pady = 1)
 
 win.mainloop()
