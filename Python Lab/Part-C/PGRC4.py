@@ -2,10 +2,9 @@ import mysql.connector
 
 conn = mysql.connector.connect(host='localhost',database='employeedb',user='root',password='')
 cursor = conn.cursor()
-def insert_Edata(eno, name, sal):
+def insert_EmpData(eno, name, sal):
     try:
-        query = """INSERT INTO emp (Eno, name, sal) 
-        VALUES (%s, %s, %s) """
+        query = """INSERT INTO emp (Eno, name, sal) VALUES (%s, %s, %s) """
         record = (eno, name, sal)
         cursor.execute(query, record)
         conn.commit()
@@ -57,7 +56,7 @@ while(1):
             eno=int(input("Enter employee no : "))
             name= input("Enter Name : ")
             sal= int(input("Enter salary : "))
-            insert_Edata(eno, name, sal)
+            insert_EmpData(eno, name, sal)
         print("____________________________________________________________________")
     elif c==2 :
         print("____________________________________________________________________\n")

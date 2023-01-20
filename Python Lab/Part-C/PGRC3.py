@@ -2,8 +2,7 @@ import mysql.connector
 
 def insert_data(rno, name, m1, m2,m3):
     try:
-        query = """INSERT INTO student (rno, name, m1, m2,m3) 
-        VALUES (%s, %s, %s, %s,%s) """
+        query = """INSERT INTO student (rno, name, m1, m2,m3) VALUES (%s, %s, %s, %s,%s) """
         record = (rno, name, m1, m2,m3)
         cursor.execute(query, record)
         conn.commit()
@@ -20,7 +19,7 @@ def display():
     # get all records
     records = cursor.fetchall()
     print("Total number of rows in table: ", cursor.rowcount)
-    print
+    print()
     for row in records:
         print(row[0],"\t",row[1],"\t" ,row[2] ,"\t",row[3],"\t",row[4])
     print("____________________________________________________________________")
@@ -33,19 +32,19 @@ while(1):
     print("2. To display details of students.")
     print("3. To delete perticular student details.")
     print("4. Exit.")
-    c=int(input("Enter Your choice : "))
+    c = int(input("Enter Your choice : "))
     if c==1:
         print("____________________________________________________________________")
         print("\n1.To accept the details of students and store it in database")
-        n=int(input("Enter number of students : "))
+        n = int(input("Enter number of students : "))
         for i in range(n):
             print ("\nEnter details of student : ",i+1)
-            rno=int(input("Enter Register no : "))
-            name= input("Enter Name : ") 
+            rno = int(input("Enter Register no : "))
+            name = input("Enter Name : ") 
             print("Enter marks in 3 subjects : ")
-            m1= int(input())
-            m2= int(input())
-            m3= int(input())
+            m1 = int(input())
+            m2 = int(input())
+            m3 = int(input())
             insert_data(rno, name, m1, m2,m3)
     elif c==2:
         print("____________________________________________________________________")
@@ -62,7 +61,7 @@ while(1):
                 print("\nRecord not found!") 
             else:
                 conn.commit()
-                print("\nRecord Deleted successfully. ")
+                print("\nRecord deleted successfully. ")
                 # display()
         except mysql.connector.Error as error:
             print("\nRecord not found!")
