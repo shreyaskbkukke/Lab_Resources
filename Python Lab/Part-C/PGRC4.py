@@ -58,7 +58,7 @@ while(1):
             sal= int(input("Enter salary : "))
             insert_EmpData(eno, name, sal)
         print("____________________________________________________________________")
-    elif c==2 :
+    elif c==2 : 
         print("____________________________________________________________________\n")
         displayone()
     elif c==3:
