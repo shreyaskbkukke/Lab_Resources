@@ -15,6 +15,6 @@ for i in range( n ):
     a.append( ele )
 # Print the array except the composite(non-prime) numbers
 print( "The prime numbers in the given array are : " ) 
-for j in a: 
-    if( CheckPrime( j ) != False ): 
-        print( j )
+for i in a: 
+    if( CheckPrime( i ) != False ): 
+        print( i )
