@@ -34,10 +34,10 @@ for i in range(n):
     empList[i].display()
 print("____________________________________________________________________\n")
 print("........Search........")
-n=input("Enter the employee number : ")
+no=input("Enter the employee number : ")
 print('')
 for i in empList:
-    found=i.search(n)
+    found=i.search(no)
     if found:
         i.display()
         break
