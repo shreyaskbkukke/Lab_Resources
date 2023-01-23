@@ -10,8 +10,8 @@ class employee:
     def display(self):
         print( self.empNo +"\t"+ self.name+"\t"+ self.deptName+"\t"+ self.desig+"\t"+ self.age+"\t"+ self.salary)
     
-    def search(self,eno):
-        if self.empNo==eno:
+    def search(self,no):
+        if self.empNo==no:
             return True
         else:
             return False
@@ -34,10 +34,10 @@ for i in range(n):
     empList[i].display()
 print("____________________________________________________________________\n")
 print("........Search........")
-no=input("Enter the employee number : ")
+eno=input("Enter the employee number : ")
 print('')
 for i in empList:
-    found=i.search(no)
+    found=i.search(eno)
     if found:
         i.display()
         break

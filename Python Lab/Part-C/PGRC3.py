@@ -23,7 +23,7 @@ def display():
     for row in records:
         print(row[0],"\t",row[1],"\t" ,row[2] ,"\t",row[3],"\t",row[4])
     print("____________________________________________________________________")
-
+    
 conn = mysql.connector.connect(host='localhost',database='studentdb',user='root',password='')
 cursor = conn.cursor()
 while(1):
@@ -45,7 +45,7 @@ while(1):
             m1 = int(input())
             m2 = int(input())
             m3 = int(input())
-            insert_data(rno, name, m1, m2,m3)
+            insert_data(rno, name, m1, m2, m3)
     elif c==2:
         print("____________________________________________________________________")
         display()
