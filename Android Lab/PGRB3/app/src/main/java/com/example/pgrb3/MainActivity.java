@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Save as",Toast.LENGTH_SHORT).show();
                 break;
         }
-
+        return true;
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu){

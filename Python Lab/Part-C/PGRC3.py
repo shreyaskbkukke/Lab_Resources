@@ -3,7 +3,7 @@ import mysql.connector
 def insert_data(rno, name, m1, m2,m3):
     try:
         query = """INSERT INTO student (rno, name, m1, m2, m3) VALUES (%s, %s, %s, %s,%s) """
-        record = (rno, name, m1, m2,m3)
+        record = (rno, name, m1, m2, m3)
         cursor.execute(query, record)
         conn.commit()
         print("\nRecord inserted successfully into student table.")

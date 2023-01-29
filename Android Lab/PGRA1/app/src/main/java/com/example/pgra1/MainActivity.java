@@ -8,7 +8,6 @@ import android.content.DialogInterface;
 import android.view.View;
 import android.widget.Button;
 
-
 public class MainActivity extends AppCompatActivity {
     Button Exit;
 
@@ -25,12 +24,14 @@ public class MainActivity extends AppCompatActivity {
                 builder.setMessage("Are you sure want to exit?");
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialogInterface, int i) { finish(); }
+                    public void onClick(DialogInterface dialogInterface, int i) { 
+                        finish(); 
+                    }
                 });
                 builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss ();
+                        dialogInterface.dismiss();
                     }
 
                 });

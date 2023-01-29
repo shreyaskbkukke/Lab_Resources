@@ -7,7 +7,7 @@ def CheckPrime( n ):
         #returns false if it's not prime number
 
 # Declare the new array and take input to that array 
-a = [] 
+a = []
 n = int(input("Enter value of n : "))  
 print( "Enter", n,  "elements of the array : " ) 
 for i in range( n ):  
