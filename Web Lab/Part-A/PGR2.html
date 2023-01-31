@@ -13,19 +13,21 @@
             {
                 var canvas=document.getElementById('canvas');
                 var cnt=canvas.getContext('2d');
+                
                 cnt.font="40pt sans_serif";
                 cnt.fillText("NO",120,50);
                 cnt.font="100pt sans_serif";
                 cnt.fillText("P",114,205);
-                cnt.fillStyle="white";
+                
                 cnt.strokeStyle="red";
                 cnt.lineWidth=4; 
                 cnt.arc(150,150,75,0,Math.PI*2,true);
                 cnt.stroke();
-                cnt.fillStyle="blue";
+                
                 cnt.moveTo(100,95);
-                cnt.lineTo(210,200);
+                cnt.lineTo(210,195);
                 cnt.stroke();
+                
                 cnt.fillStyle="black";
                 cnt.font="40pt sans_serif";
                 cnt.fillText("PARKING",50,300);
